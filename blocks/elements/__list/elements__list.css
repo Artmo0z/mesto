@@ -6,15 +6,3 @@
     margin: 0;
     padding: 0;
 }
-
-@media screen and (max-width: 768px) {
-    .elements__list {
-        margin-left: 60px;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .elements__list {
-        margin-left: 0;
-    }
-}

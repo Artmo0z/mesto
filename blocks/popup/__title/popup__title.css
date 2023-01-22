@@ -6,11 +6,17 @@
     margin: 34px 64px 54px 36px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 768px) {
     .popup__title {
-        width: 238px;
+        width: 438px;
         font-size: 18px;
         line-height: 22px;
         margin: 25px 22px 75px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .popup__title {
+        width: 238px;
     }
 }
