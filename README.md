@@ -13,4 +13,4 @@
 * JavaScript
 ___________
 
-<h2 align="center"><a href="https://artmo0z.github.io/mesto/">-> Сайт <-</a></h1>
+<h2 align="center">-> <a href="https://artmo0z.github.io/mesto/">Сайт</a> <-</h1>
