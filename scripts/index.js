@@ -10,20 +10,20 @@ let popup = document.querySelector('.popup');
 let closePopup = document.querySelector('.popup__close');
 
 function handleFormSubmit(evt) {
-	evt.preventDefault();
-	profileName.textContent = nameInput.value;
-	profileJob.textContent = jobInput.value;
-	popupClose();
+  evt.preventDefault();
+  profileName.textContent = nameInput.value;
+  profileJob.textContent = jobInput.value;
+  popupClose();
 }
 
 function popupOpen() {
-	popup.classList.add('popup_opened');
-	nameInput.value = profileName.textContent;
-	jobInput.value = profileJob.textContent;
+  popup.classList.add('popup_opened');
+  nameInput.value = profileName.textContent;
+  jobInput.value = profileJob.textContent;
 }
 
 function popupClose() {
-	popup.classList.remove('popup_opened');
+  popup.classList.remove('popup_opened');
 }
 
 closePopup.addEventListener('click', popupClose);
