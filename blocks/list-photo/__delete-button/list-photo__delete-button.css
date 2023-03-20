@@ -1,0 +1,19 @@
+.list-photo__delete-button {
+  background-image: url(../../../images/waste.svg);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  padding: 0;
+  width: 18px;
+  height: 19px;
+  border: none;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  opacity: 1;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.list-photo__delete-button:hover {
+  opacity: .6;
+}
