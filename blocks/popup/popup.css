@@ -1,8 +1,4 @@
 .popup {
-<<<<<<< HEAD
-=======
-  display: none;
->>>>>>> f21a9ca5e7829457bf407e40cea63d15448da25e
   background: rgba(0, 0, 0, .5);
   width: 100%;
   height: 100%;
@@ -10,13 +6,10 @@
   top: 0;
   left: 0;
   z-index: 1;
-<<<<<<< HEAD
   display: flex;
   align-items: center;
   justify-content: center;
   visibility: hidden;
   opacity: 0;
   transition: visibility .3s, opacity .3s linear;
-=======
->>>>>>> f21a9ca5e7829457bf407e40cea63d15448da25e
 }

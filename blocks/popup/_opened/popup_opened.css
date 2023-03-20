@@ -1,10 +1,4 @@
 .popup_opened {
-<<<<<<< HEAD
   visibility: visible;
   opacity: 1;
-=======
-  display: flex;
-  align-items: center;
-  justify-content: center;
->>>>>>> f21a9ca5e7829457bf407e40cea63d15448da25e
 }
