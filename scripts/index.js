@@ -4,8 +4,8 @@ const profileJob = document.querySelector('.profile__subtitle');
 const profileEditPopup = document.querySelector('.popup_edit-profile');
 const nameInput = document.querySelector('.popup__input_name_value');
 const jobInput = document.querySelector('.popup__input_job_value');
-const popupEditProfile = document.querySelector('.popup');
-const formEditProfile = popupEditProfile.querySelector('.popup__form');
+const popups = document.querySelectorAll('.popup');
+const formEditProfile = document.querySelector('.popup__form');
 const buttonCloseEditProfileForm = profileEditPopup.querySelector('.popup__close');
 const addPopupPhoto = document.querySelector('.popup_addPhoto');
 const buttonOpenAddCardForm = document.querySelector('.profile__add-button');
@@ -51,25 +51,46 @@ function submitEditProfileForm(evt) {
   evt.preventDefault();
   profileName.textContent = nameInput.value;
   profileJob.textContent = jobInput.value;
-  closePopup(popupEditProfile);
+  closePopup(profileEditPopup);
 }
 
 function openEditProfileForm() {
   nameInput.value = profileName.textContent;
   jobInput.value = profileJob.textContent;
-  openPopup(popupEditProfile);
+  openPopup(profileEditPopup);
 }
 
 function openPopup(popupForm) {
   popupForm.classList.add('popup_opened');
+  document.addEventListener('keydown', closePopupEscape);
 }
 
 function closePopup(popupForm) {
   popupForm.classList.remove('popup_opened');
+  document.removeEventListener('keydown', closePopupEscape);
+
+  formAddCard.reset();
 }
 
+function closePopupEscape(evt) {
+  if (evt.key === 'Escape') {
+    const popupOpen = document.querySelector('.popup_opened')
+    closePopup(popupOpen);
+  }
+}
+
+function closePopupOverlay(evt) {
+  if(evt.target.classList.contains('popup_opened')){
+    closePopup(evt.target);
+  }
+}
+
+popups.forEach(function (popup) {
+  popup.addEventListener('click', closePopupOverlay)
+})
+
 buttonCloseEditProfileForm.addEventListener('click', function() {
-  closePopup(popupEditProfile);
+  closePopup(profileEditPopup);
 });
 
 profileEditButton.addEventListener('click', function() {
