@@ -29,21 +29,25 @@
 @import url(../blocks/popup/__title/popup__title.css);
 @import url(../blocks/popup/__form/popup__form.css);
 @import url(../blocks/popup/__input/popup__input.css);
+@import url(../blocks/popup/__input/_type/popup__input_type_error.css);
 @import url(../blocks/popup/__button/popup__button.css);
+@import url(../blocks/popup/__button/_disabled/popup__button_disabled.css);
 @import url(../blocks/popup/__close/popup__close.css);
 @import url(../blocks/popup/_opened/popup_opened.css);
-@import url(../blocks/popup/__open-container/popup__open-container.css.css);
-@import url(../blocks/popup/__open-image/popup__open-image.css.css);
+@import url(../blocks/popup/__open-container/popup__open-container.css);
+@import url(../blocks/popup/__open-image/popup__open-image.css);
 @import url(../blocks/popup/__open-title/popup__open-title.css);
+@import url(../blocks/popup/__error/popup__error.css);
+@import url(../blocks/popup/__error/_visible/popup__error_visible.css);
 /* end popup */
 
 /* list-photo */
 @import url(../blocks/list-photo/list-photo.css);
 @import url(../blocks/list-photo/__delete-button/list-photo__delete-button.css);
-@import url(../blocks/list-photo/__like/list-photo__like.css.css);
-@import url(../blocks/list-photo/__like/_active/list-photo__like_active.css.css);
-@import url(../blocks/list-photo/__card-items/list-photo__card-items.css.css);
-@import url(../blocks/list-photo/__card/list-photo__card.css.css);
+@import url(../blocks/list-photo/__like/list-photo__like.css);
+@import url(../blocks/list-photo/__like/_active/list-photo__like_active.css);
+@import url(../blocks/list-photo/__card-items/list-photo__card-items.css);
+@import url(../blocks/list-photo/__card/list-photo__card.css);
 @import url(../blocks/list-photo/__image/list-photo__image.css);
-@import url(../blocks/list-photo/__title/list-photo__title.css.css);
+@import url(../blocks/list-photo/__title/list-photo__title.css);
 /* end list-photo */
